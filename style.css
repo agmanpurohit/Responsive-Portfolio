@@ -204,3 +204,11 @@ section {
 .scroll:hover {
     transform: translateY(-4px) scale(1.08);
 }
+
+/* sticky-navbar-design */
+header.sticky {
+    background: lightblue;
+    padding: 14px 12%;
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 10%);
+    transition: all .42s;
+}
