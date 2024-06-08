@@ -9,12 +9,12 @@
     scroll-behavior: smooth;
     text-decoration: none;
     list-style: none;
-    color: #141313;
 }
 
 header {
     position: fixed;
     width: 100%;
+    height: fit-content;
     top: 0;
     right: 0;
     z-index: 1000;
@@ -22,10 +22,11 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 30px 12%;
+    background: lightblue;
 }
 
 .logo img {
-    width: 110px;
+    width: 60px;
     position: relative;
 }
 
@@ -212,7 +213,7 @@ section {
 
 /* sticky-navbar-design */
 header.sticky {
-    background: #fff;
+    background: lightcyan;
     padding: 14px 12%;
     box-shadow: 0px 0px 10px rgb(0 0 0 / 10%);
     transition: all .42s;
@@ -501,7 +502,7 @@ hr {
 
 .blog-img img {
     max-width: 100%;
-    width: 80%;
+    width: 100%;
     height: auto;
     transition: all .42s;
 }
@@ -644,12 +645,12 @@ form .msg {
 /* Responsive Design */
 @media(max-width:1200px) {
     header {
-        padding: 30px 4%;
+        padding: 10px 4%;
         transition: .3s;
     }
 
     section {
-        padding: 80px 4%;
+        padding: 125px 4%;
         transition: .3s;
     }
 
@@ -700,16 +701,57 @@ form .msg {
 }
 
 @media(max-width:630px) {
-    .about-sec{
+    .about-sec {
         grid-template-columns: 1fr;
     }
+
     .about-img {
         text-align: center;
     }
-    .main-contact{
+
+    .main-contact {
         grid-template-columns: 1fr;
     }
-    .main-fir{
+
+    .main-fir {
         text-align: center;
+    }
+}
+
+@media(max-width:720px) {
+    .about-center h1 {
+        margin-bottom: 80px;
+        transition: .3s;
+    }
+}
+
+@media(max-width:910px) {
+    #menu-icon {
+        display: block;
+    }
+
+    .navlist {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 300px;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: #141313;
+        padding: 120px 30px;
+        border-radius: 10px;
+        transition: all .42s;
+    }
+
+    .navlist a {
+        color: #fff;
+        display: block;
+        margin: 10px 0;
+    }
+
+    .navlist.open {
+        right: 0;
     }
 }
