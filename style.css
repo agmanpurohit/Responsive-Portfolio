@@ -14,7 +14,7 @@
 header {
     position: fixed;
     width: 100%;
-    height: fit-content;
+    height: 75px;
     top: 0;
     right: 0;
     z-index: 1000;
@@ -23,6 +23,8 @@ header {
     justify-content: space-between;
     padding: 30px 12%;
     background: lightblue;
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 50%);
+
 }
 
 .logo img {
@@ -673,10 +675,15 @@ form .msg {
 
     .scroll {
         display: none;
+
     }
 }
 
 @media(max-width:630px) {
+    .home {
+        background-image: none;
+    }
+
     .home-text h1 {
         font-size: 46px;
         line-height: 85px;
@@ -700,7 +707,7 @@ form .msg {
     }
 }
 
-@media(max-width:630px) {
+@media(max-width:1000px) {
     .about-sec {
         grid-template-columns: 1fr;
     }
@@ -715,6 +722,10 @@ form .msg {
 
     .main-fir {
         text-align: center;
+    }
+
+    .main-fir p {
+        display: inline-block;
     }
 }
 
