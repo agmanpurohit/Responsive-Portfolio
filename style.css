@@ -107,7 +107,7 @@ section {
 
 .home-text h1 {
     color: #141313;
-    font-size: 66px;
+    font-size: 60px;
     font-weight: 700;
     line-height: 100px;
     text-transform: capitalize;
@@ -191,7 +191,7 @@ section {
 .scroll {
     position: absolute;
     top: 94%;
-    left: 50%;
+    left: 45%;
     transform: translateY(-50%);
     transition: all .42s;
 }
@@ -261,7 +261,7 @@ header.sticky {
 }
 
 .about-text h6 {
-    max-width: 470px;
+    /* max-width: 470px; */
     font-size: 16px;
     font-weight: 500;
     line-height: 28px;
@@ -734,6 +734,14 @@ form .msg {
         margin-bottom: 80px;
         transition: .3s;
     }
+
+    .home-text h1 {
+        font-size: 45px;
+    }
+
+    .home {
+        background-image: none;
+    }
 }
 
 @media(max-width:910px) {
@@ -764,5 +772,13 @@ form .msg {
 
     .navlist.open {
         right: 0;
+    }
+
+    .home-text h1 {
+        font-size: 45px;
+    }
+
+    .home {
+        background-image: none;
     }
 }
